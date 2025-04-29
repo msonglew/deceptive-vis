@@ -152,22 +152,40 @@
     </header>
 
     <main>
-      <h2>Proposition: [STATE PROPOSITION]</h2>
+      <h2>Proposition: California is not supportive of abortion access.</h2>
 
       <section>
         <h3>FOR the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="/img/ca_against_final.svg" alt="Choropleth of the U.S. showing change in abortion providers." />
+          <figcaption>Choropleth of the U.S. showing change in abortion providers by state from 2014-2017.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>Feature Selection: (-2)</li>
+          <p>Only a single feature is visualized. Since it is not 
+            analyzed in relation to other features, the insight it 
+            proivdes lacks contextual grounding and does not reflect 
+            the full complexity of the entire data set.
+          </p>
+          <li>Gradient: (-1)</li>
+          <p>
+            California's data, which is an outlier for this feature, 
+            is included in the gradient. This causes the data from 
+            other states to cluster around similar color values, which 
+            makes differnce between them seem minimal and California stand 
+            out in contrast. In this case, California is an outlier with 
+            a low value.
+          </p>
+          <li>Title and Annotation: (2)</li>
+          <p>
+            The title, subtitle, and annotation are all truthfully 
+            representative of the feature visualized. They are all 
+            direct interpretations and descriptions of the data.
+          </p>
         </ul>
       </section>
 
@@ -175,23 +193,69 @@
         <h3>AGAINST the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="/img/ca_for_final.svg" alt="Choropleth of the U.S. showing number of abortion providers." />
+          <figcaption>Choropleth of the U.S. showing number of abortion providers by state in 2017.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>Feature Selection: (-2)</li>
+          <p>Similar to the converse case, only a single feature 
+            is visualized. Since it is not analyzed in relation 
+            to other features, the insight it proivdes lacks 
+            contextual grounding and does not reflect 
+            the full complexity of the entire data set.
+          </p>
+          <li>Gradient: (-1)</li>
+          <p>
+            Similar to the converse case, California's data, which is an outlier for this feature, 
+            is included in the gradient. This causes the data from 
+            other states to cluster around similar color values, which 
+            makes differnce between them seem minimal and California stand 
+            out in contrast. However, in this case California's data is an outlier
+            with a high value, which inverts how the map is colored in comparison 
+            to the converse side.
+          </p>
+          <li>Title and Annotation: (2)</li>
+          <p>
+            Similar to the converse case, the title, subtitle, and annotation are all truthfully 
+            representative of the feature visualized. They are all 
+            direct interpretations and descriptions of the data.
+          </p>
         </ul>
       </section>
 
       <section>
         <h2>Final Reflection</h2>
 
-        <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+        <p>
+          &emsp;When I first viewed the dataset and saw a row for each state, my initial 
+          instinct was to create a geographically-based visualization. I experimented 
+          with comparing pairs of features, but I could not formulate a clear question 
+          or find an effective way to visualize them, so I moved away from this approach. 
+          After deciding on a different direction, I began iteratively creating choropleths 
+          for features with valid numerical data types. I excluded features with string data 
+          types and focused only on numerical ones. This process resulted in about 15 
+          visualizations. As I reviewed these visualizations, I looked for features that 
+          could be grouped together and that revealed contrasting patterns. This grouping 
+          was relatively straightforward. However, it was difficult to keep an open mind while 
+          also searching for a proposition with a built-in contradiction that could serve as 
+          the foundation for a meaningful question.
+        </p>
+        <p>
+          &emsp;Through this project, I have come to understand that ‘ethical analysis and visualization’ 
+          as walking a very fine line. A visualization should accurately represent the entirety 
+          of the dataset in context—otherwise, it risks misleading by presenting only a partial 
+          or decontextualized view. Misleading persuasive choices are those that do not give the 
+          reader context on the whole dataset and obscure its nuance. For example, instead of 
+          contrasting two separate figures, combining them into one visualization can more 
+          ethically show nuance—such as combining figure 1 and 2 shows that although California 
+          had the largest decrease in providers, it still has the most overall. Through my 
+          experience in this project, I have not been able to distinguish any ‘acceptable’ 
+          persuasive choices. There may be methods I haven’t yet explored that allow for more 
+          informative and ethically grounded persuasive storytelling.
+        </p>
       </section>
     </main>
   </body>
